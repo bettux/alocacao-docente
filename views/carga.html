@@ -1,0 +1,15 @@
+<section class="hidden" id="carga-view">
+<div class="toolbar"><div><h1>Carga horária docente</h1><p class="muted">Conferência por professor e período. Aulas conjuntas são contadas uma vez por professor; atividades complementares não recebem os 20%.</p></div><span class="pill" id="c-state">Aguardando consulta</span></div>
+<section class="card">
+<div class="form-inline">
+<div class="field"><label for="c-periodo">Período letivo</label><select id="c-periodo"></select></div>
+<div class="field"><label for="c-modo">Visualização</label><select id="c-modo"><option value="semestre">Semestre completo</option><option value="semana">Semana específica</option></select></div><div class="field hidden" id="c-semana-field"><label for="c-semana">Semana de referência</label><input id="c-semana" type="date"/></div><div class="field"><label for="c-search">Buscar professor</label><input id="c-search" placeholder="Nome do professor" type="search"/></div>
+<button class="btn primary" id="c-reload" type="button">Atualizar relatório</button>
+</div>
+<p class="muted" style="margin-bottom:0"><span id="c-mode-help">Semestre completo exibe a maior carga SEMANAL de pós dentro do período, não a soma das aulas do semestre. Veja a distribuição semana a semana em Ver detalhes.</span></p>
+</section>
+<div aria-live="polite" class="c-summary" id="c-summary"></div>
+<section class="card"><div class="grid-overflow"><table class="c-table"><thead id="c-head"><tr><th>Professor</th><th>Graduação/semana</th><th>Aulas pós</th><th>Preparação (20%)</th><th>Ativ. semanais</th><th>Total semanal</th><th>Detalhes</th></tr></thead><tbody id="c-rows"><tr><td class="muted" colspan="7">Selecione um período para consultar.</td></tr></tbody></table></div></section>
+<section class="card hidden" id="c-details"><div class="toolbar"><div><h2 id="c-detail-title">Disciplinas do professor</h2><span class="muted" id="c-detail-subtitle"></span></div><button class="btn" id="c-close" type="button">Fechar detalhes</button></div><div id="c-detail-body"></div></section>
+<p class="muted">* No modo Semestre completo, a tabela mostra a semana com maior carga de pós no semestre; o detalhamento mostra todas as semanas. A conversão para 50 minutos ocorre sobre a soma dos minutos da pós em cada semana. O teto de 40 aulas deve ser conferido semana a semana. Aulas EAD sem professor não geram carga docente.</p>
+</section>
