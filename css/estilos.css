@@ -1,0 +1,78 @@
+:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#172337;background:#f3f6fa}*{box-sizing:border-box}body{margin:0}header{background:#fff;border-bottom:1px solid #dfe5ee;padding:18px max(24px,calc((100vw - 1150px)/2));display:flex;align-items:center;justify-content:space-between;gap:16px}header b{font-size:20px}main{max-width:1150px;margin:32px auto;padding:0 20px}.card{background:white;border:1px solid #dfe5ee;border-radius:14px;padding:24px;box-shadow:0 2px 9px #2336500b}.login{max-width:430px;margin:55px auto}h1{font-size:24px;margin:0 0 8px}h2{font-size:19px;margin:0 0 16px}.muted{color:#69768a;font-size:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}label{font-size:13px;font-weight:650}input,select{font:inherit;border:1px solid #ccd6e2;border-radius:9px;padding:10px 12px;background:white;width:100%;min-width:0}input:focus,select:focus{outline:2px solid #b6d7ff;border-color:#377cc0}.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border:1px solid #c6d1df;background:white;color:#21344e;border-radius:9px;padding:10px 14px;cursor:pointer;font:inherit;font-weight:650}.btn:hover{background:#f2f6fc}.primary{background:#186ac6;color:white;border-color:#186ac6}.primary:hover{background:#1155a5}.danger{color:#b02c31}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px;flex-wrap:wrap}.list{display:grid;gap:10px}.person{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #e0e7f0;border-radius:10px;padding:12px}.dot{width:22px;height:22px;border-radius:7px;border:1px solid #0002;flex-shrink:0}.person-info{flex:1;min-width:0}.person-info strong{display:block;overflow-wrap:anywhere}.person-info small{color:#65738a}.notice{padding:12px 14px;background:#eef5ff;border:1px solid #c8def9;border-radius:10px;margin:14px 0;font-size:14px}.error{background:#fff0f0;border-color:#f0babc;color:#972d33}.ok{background:#eaf8ee;border-color:#a3dec0;color:#245d38}.hidden{display:none!important}.pill{display:inline-block;background:#ebf1f9;color:#315379;font-size:12px;padding:3px 8px;border-radius:20px}.subjectlist{max-height:440px;overflow:auto;border:1px solid #e3e9f0;border-radius:10px;padding:12px}.subject{display:flex;align-items:flex-start;gap:10px;padding:10px 3px;border-bottom:1px solid #edf1f5}.subject:last-child{border:0}.subject input{width:18px;height:18px;margin:3px 0}.subject label{font-size:14px;font-weight:500;cursor:pointer}.subject small{color:#728096;display:block;margin-top:3px}.inline-color{display:flex;align-items:center;gap:10px}.inline-color input{width:60px;height:43px;padding:4px}.sr{position:absolute;left:-9999px}.count{font-size:13px;color:#6e7d90}#msg:empty{display:none}@media(max-width:780px){.grid{grid-template-columns:1fr}header{padding:15px 20px}.person{flex-wrap:wrap}}
+
+nav.tabs{display:flex;gap:8px;margin:0 0 22px;flex-wrap:wrap}.tabs button.active{background:#186ac6;color:white}
+.grade-layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:16px;align-items:start}.palette{position:sticky;top:12px;max-height:77vh;overflow:auto}.palette-item{border:1px solid #d5dfed;border-radius:9px;padding:10px;margin:8px 0;background:#fff;cursor:grab}.palette-item strong{display:block;font-size:13px}.palette-item small{color:#66758d}.grid-overflow{overflow-x:auto}.week-grid{border-collapse:separate;border-spacing:4px;width:100%;min-width:620px;table-layout:fixed}.week-grid th{font-size:12px;color:#52637b;text-align:center}.week-grid td{height:65px;background:#f5f8fc;border:1px dashed #cdd7e4;border-radius:7px;vertical-align:top;padding:3px;cursor:pointer}.week-grid td:hover{border-color:#186ac6;background:#eaf3ff}.lesson{font-size:11px;border-radius:6px;padding:5px;margin:2px;line-height:1.35;border-left:5px solid #186ac6;background:white;box-shadow:0 1px 4px #0001;cursor:pointer;overflow-wrap:anywhere}.lesson b{display:block}.lesson small{display:block}.lesson .tag{display:inline-block;border-radius:3px;background:#e5ebf5;padding:1px 4px;margin-top:3px}.section-turma{margin-top:18px}.inline-options{display:flex;flex-wrap:wrap;gap:12px}.inline-options label{font-weight:500}.inline-options input{width:auto}.side-head{display:flex;justify-content:space-between;align-items:center}.form-inline{display:flex;gap:9px;align-items:end;flex-wrap:wrap}.form-inline .field{margin:0;min-width:140px;flex:1}.modal-mask{position:fixed;inset:0;background:#101c35a9;display:flex;align-items:center;justify-content:center;padding:15px;z-index:10}.modal-mask .card{width:min(540px,100%);max-height:92vh;overflow:auto}.pending{font-size:12px;color:#b03d36}.chip{display:inline-flex;padding:4px 8px;border-radius:6px;background:#edf3fb;font-size:12px}.sub-actions{display:flex;gap:8px;flex-wrap:wrap}.banner{background:#fff8e7;border:1px solid #eed498;border-radius:9px;padding:12px;font-size:13px;margin:10px 0}@media(max-width:930px){.grade-layout{grid-template-columns:1fr}.palette{position:static;max-height:none}}
+/* Mensagens de validação exibidas dentro da janela de alocação. */
+#b-feedback{margin:0 0 14px;line-height:1.45;}
+#b-feedback.hidden{display:none!important;}
+
+/* Grade 3.4: blocos desenhados em TODAS as aulas; sábado exclusivo EAD. */
+.week-grid{min-width:840px;border-spacing:3px}.week-grid th:first-child{width:48px}
+.week-grid td{height:76px;min-width:105px;position:relative;vertical-align:top;}
+.week-grid td.grade-occupied{background:#e7effb;border:1px solid #aabed9}
+.week-grid td.grade-unavailable{background:repeating-linear-gradient(135deg,#f1f3f7,#f1f3f7 5px,#e5e9f0 5px,#e5e9f0 10px);cursor:default;border:none}
+.lesson-segment{min-height:48px;margin:1px 0;padding:5px 6px;box-shadow:none}
+.lesson-follow{background:#edf3fa;color:#40536d;border-radius:3px;font-size:10px}
+.lesson-start{background:white}
+.cell-time{display:block;font-size:9px;color:#8491a1;line-height:1.1;margin:1px 0 4px}
+
+/* Relatorio de carga docente */
+.c-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}.c-stat{display:flex;flex-direction:column;gap:7px;padding:16px}.c-stat strong{font-size:25px}.c-table{width:100%;border-collapse:collapse;font-size:13px;min-width:850px}.c-table th,.c-table td{border-bottom:1px solid #e6ebf3;padding:13px 10px;text-align:left;vertical-align:middle}.c-table th{background:#f2f6fc;color:#30445d;white-space:nowrap}.c-table td.c-emphasis{font-weight:750;color:#184d89}.c-dot{font-size:19px;margin-right:8px}.c-table tbody tr:hover{background:#f9fbfe}#c-details{margin-top:18px}#c-detail-body h3{font-size:16px;margin:24px 0 10px}@media(max-width:660px){.c-summary{grid-template-columns:1fr}}
+
+/* Atividades complementares */
+#a-form textarea{font:inherit;border:1px solid #ccd6e2;border-radius:9px;padding:10px 12px;width:100%;resize:vertical}#a-feedback.hidden{display:none!important}#a-rows .btn{padding:6px 10px;font-size:12px;margin-right:4px}#ativ-view .grid{grid-template-columns:minmax(285px,0.9fr) minmax(0,1.4fr)}@media(max-width:880px){#ativ-view .grid{grid-template-columns:1fr}}
+
+/* Indicadores de teto semanal (v3.7) */
+.c-limit-over{color:#a32929!important;background:#fff0f0;font-weight:800;}
+.c-limit-full{color:#915500!important;font-weight:800;}
+
+/* v3.8: controle opcional de subturmas */
+.subturma-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.subturma-head h2{margin:0}.subturma-head .btn{font-size:12px;padding:7px 10px}
+
+/* v3.9: calendario de encontros de pos */
+#pos-view .grid{grid-template-columns:minmax(290px,.8fr) minmax(0,1.2fr)}
+#p-list .person{justify-content:space-between;flex-wrap:wrap}
+#p-list .person .btn{padding:6px 10px}
+#p-feedback.hidden{display:none!important}
+@media(max-width:800px){#pos-view .grid{grid-template-columns:1fr}}
+
+/* v3.11: painel compacto da pós, sem listagem extensa por padrão */
+.p-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0 20px}
+.p-stats>div{border:1px solid #dfe5ee;background:#f7f9fc;padding:12px;border-radius:9px;display:flex;flex-direction:column;gap:6px}
+.p-stats small{color:#64748b}.p-stats strong{font-size:16px}
+.p-week-board{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin:14px 0}
+.p-day{border:1px solid #e1e7ee;border-radius:9px;padding:8px 5px;min-height:96px;text-align:center;display:flex;flex-direction:column;gap:7px;font-size:13px}
+.p-day-cells{flex:1;border-radius:6px;background:#f3f6fa;display:flex;align-items:center;justify-content:center;font-size:12px;padding:5px}
+.p-day-active{background:#dfecff;border:1px solid #a9cbf1;color:#164f87;font-weight:700}
+.p-day small{font-size:10px;color:#6d7a8d}.p-details{border:1px solid #dfe5ee;border-radius:10px;margin-top:15px;padding:13px}
+.p-details summary{cursor:pointer;font-weight:650}.p-details .list{margin-top:12px;max-height:330px;overflow:auto}
+.p-compact-row{display:flex;align-items:center;gap:10px;border-bottom:1px solid #e4e9f0;padding:9px 0}
+.p-compact-row:last-child{border-bottom:none}.p-compact-row .btn{font-size:12px;padding:7px 9px;white-space:nowrap}
+@media(max-width:560px){.p-week-board{grid-template-columns:repeat(3,1fr)}.p-stats{grid-template-columns:1fr}}
+
+/* v3.12: grade semanal da pos, seguindo o padrao visual da graduacao */
+.p-pos-grid{min-width:700px;width:100%;table-layout:fixed}
+.p-pos-grid th:first-child{width:55px}
+.p-pos-grid td{height:54px;vertical-align:top;padding:4px}
+.p-pos-lesson{min-height:44px;margin:0;overflow:hidden}
+.p-pos-lesson b{display:block;font-size:11px;overflow-wrap:anywhere}
+.p-pos-lesson small{display:block;font-size:10px;overflow-wrap:anywhere}
+.p-slot-hint{font-size:10px;opacity:.5}
+
+/* v3.13 — pós no mesmo fluxo visual da graduação */
+#pos-view .grade-layout{grid-template-columns:290px minmax(0,1fr)}
+#pos-view .p-sidebar h3{margin-top:18px}
+.p-subject-list{display:grid;gap:8px;max-height:360px;overflow-y:auto}
+.p-subject-tile{width:100%;text-align:left;background:white;border:1px solid #d5dfed;border-radius:9px;padding:12px;cursor:pointer;color:#20334f}
+.p-subject-tile strong,.p-subject-tile small{display:block}.p-subject-tile small{color:#66758d;margin-top:5px}
+.p-subject-tile.selected{border:2px solid #186ac6;background:#eaf3ff}
+.p-subject-tile:hover{background:#eef5ff}
+#p-week-board .week-grid td{cursor:pointer;min-height:50px}#p-week-board .week-grid td:hover{outline:2px solid #186ac6}
+.p-day-head{cursor:pointer;color:#186ac6!important}.p-day-head:hover{text-decoration:underline}
+#p-modal .p-dialog{width:min(580px,100%)}
+#p-modal .field{margin-bottom:13px}
+@media(max-width:930px){#pos-view .grade-layout{grid-template-columns:1fr}#pos-view .p-sidebar{position:static;max-height:none}}
+
+/* v3.14: resultado do salvamento sempre visível também fora do modal */
+#p-main-feedback.hidden{display:none!important}
+#p-main-feedback{margin:12px 0}

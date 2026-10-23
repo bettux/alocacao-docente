@@ -1,0 +1,14 @@
+<section class="hidden" id="grade-view">
+<div class="toolbar"><div><h1>Grade semanal</h1><span class="muted">Arraste uma matéria para um horário ou clique em uma célula. Compartilhadas T1/T2 contam uma única vez por docente.</span></div><span class="pill" id="grade-state">Sem alterações</span></div>
+<div class="card"><div class="form-inline">
+<div class="field"><label>Período letivo</label><select id="g-periodo"></select></div>
+<div class="field"><label>Curso / matriz</label><select id="g-matriz"></select></div>
+<div class="field"><label>Semestre curricular</label><select id="g-semestre"></select></div>
+<div class="field"><label>Turma</label><select id="g-turma"><option value="">Turma principal (padrão)</option></select></div>
+<button class="btn primary" id="g-load" type="button">Abrir grade</button>
+</div><details style="margin-top:15px"><summary>Criar período letivo (se ainda não existir)</summary><div class="form-inline" style="margin-top:12px"><div class="field"><label>Ano</label><input id="g-ano" max="2100" min="2020" type="number" value="2027"/></div><div class="field"><label>Semestre</label><select id="g-sem"><option value="1">1º</option><option value="2">2º</option></select></div><div class="field"><label>Início</label><input id="g-inicio" type="date"/></div><div class="field"><label>Fim</label><input id="g-fim" type="date"/></div><button class="btn" id="g-create-period" type="button">Criar período</button></div></details>
+</div>
+<div class="hidden" id="g-editor"><div class="banner">Graduação: segunda a sexta, 5 aulas de 50 minutos (18h25–22h50, intervalo 20h05–20h20). Sábado: EAD com 8 posições de 50 minutos, incluindo pausas e almoço. EAD pode ficar sem professor. Pós-graduação terá calendário separado.</div>
+<div class="toolbar" style="margin-top:16px"><div class="sub-actions"><button class="btn" id="g-add-sub" type="button">＋ Adicionar subturma</button><button class="btn" id="g-reload" type="button">↻ Recarregar</button></div><button class="btn primary" id="g-save" type="button">💾 Salvar alterações</button></div>
+<div class="grade-layout"><aside class="card palette"><div class="side-head"><h2>Matérias</h2><span class="pill" id="g-pending"></span></div><p class="muted">Arraste para a grade. Clique para selecionar. Os limites semanais são estimativas; blocos de várias aulas ocupam todas as linhas correspondentes.</p><div id="g-palette"></div></aside><div id="g-tables"></div></div></div>
+</section>

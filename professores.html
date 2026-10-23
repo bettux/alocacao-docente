@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Professores | Alocação Docente</title>
+<link href="./css/estilos.css" rel="stylesheet"/>
+<link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+<header><b>📚 Alocação Docente</b><button class="btn hidden" id="logout" type="button">Sair</button></header>
+<main>
+<div aria-live="polite" id="msg" role="status"></div><div id="session-loading" class="notice">Verificando sua sessão…</div>
+<section class="card login hidden" id="login-view">
+<h1>Acesso administrativo</h1><p class="muted">Entre com o usuário autorizado no Supabase.</p>
+<form id="login-form"><div class="field"><label for="email">E-mail</label><input autocomplete="username" id="email" required="" type="email"/></div><div class="field"><label for="password">Senha</label><input autocomplete="current-password" id="password" required="" type="password"/></div><button class="btn primary" type="submit">Entrar</button></form>
+</section>
+<section class="hidden" id="app-view"><nav class="tabs v4-nav"><a class="btn" href="./professores.html">👨‍🏫 Professores</a><a class="btn" href="./graduacao.html">📅 Graduação</a><a class="btn" href="./pos-graduacao.html">🎓 Pós-graduação</a><a class="btn" href="./carga-docente.html">📊 Carga docente</a><a class="btn" href="./agenda-docente.html">Agenda docente</a><a class="btn" href="./dashboard.html">Painel geral</a><a class="btn" href="./auditoria.html">Auditoria</a><a class="btn" href="./atividades.html">🧾 Atividades</a><a class="btn" href="./exportacao.html">Relatórios de Aulas</a><a class="btn" href="./configuracoes.html">Configurações acadêmicas</a><a class="btn" href="./turmas-ofertas.html">Gestão de Turmas</a><a class="btn" href="./disponibilidade.html">Disponibilidade docente</a><a class="btn" href="./usuarios.html">Usuários e acessos</a></nav><div id="v4-page-root"></div>
+</section>
+<div aria-label="Alocar disciplina" aria-modal="true" class="modal-mask hidden" id="g-modal" role="dialog"><div class="card"><h2>Alocar bloco de aulas</h2><form id="g-block-form"><div class="field"><label>Disciplina</label><select id="b-component" required=""></select></div><div class="grid"><div class="field"><label>Dia</label><select id="b-dia"></select></div><div class="field"><label>Início</label><select id="b-inicio"></select></div></div><div class="field"><label>Quantidade de aulas consecutivas</label><select id="b-qty"></select></div><div class="field"><label>Subturmas participantes (uma ou várias)</label><div class="inline-options" id="b-subs"></div></div><div class="field"><label>Professores participantes (um ou vários)</label><p class="muted" style="margin:4px 0 9px">Para EAD, o professor é opcional. Para aulas presenciais, selecione pelo menos um docente.</p><div class="field" style="margin-bottom:8px"><input autocomplete="off" id="b-prof-search" placeholder="Buscar professor pelo nome" type="search"/></div><div class="inline-options" id="b-profs"></div></div><p class="muted">Quando T1 e T2 participam juntas, um único bloco é salvo. Cada professor recebe a carga integral desse bloco.</p><div aria-live="assertive" class="notice error hidden" id="b-feedback" role="alert" tabindex="-1"></div><div class="actions"><button class="btn primary" type="submit">Aplicar na grade</button><button class="btn" id="b-cancel" type="button">Cancelar</button><button class="btn danger hidden" id="b-delete" type="button">Excluir bloco</button></div></form></div></div>
+</main>
+<script src="./config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="./js/views.js"></script>
+<script src="./js/boot.js"></script><script src="./js/layout.js"></script>
+</body></html>
